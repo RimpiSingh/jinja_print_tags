@@ -10,8 +10,21 @@
         <h1>We are displaying the data which is sent from Backend</h1>
 
         <h1>Name of the student is {{name}}</h1>
+
+
+{% if age > 10 %}
         <h1>age of the student is {{age}}</h1>
+{% endif %}
     </center>
+
+<center>
+    {% for i in name %}
+    <h1>{{i}}</h1>
+    {% endfor %}
+
+<h1><a href="{% url 'condition' %}">click and go to condition page</a></h1>
+</center>
     
 </body>
-</html>                                                                                                                                                                                                                                                                                                                                 
+</html>    
+
